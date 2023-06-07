@@ -6,6 +6,7 @@ import projImg2 from "../assets/img/project-img2.1.png";
 import projImg3 from "../assets/img/project-img3.1.png";
 import projImg4 from "../assets/img/project-img4.2.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg5 from "../assets/img/certificate.jpeg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -29,15 +30,21 @@ export const Projects = () => {
       description: "React with Ruby on Rails",
       imgUrl: projImg4,
       visitLink: 'https://onedayevent.com/'
-    }
-  ];
-
-  const front_end_projects = [
+    },
     {
       title: "Metroverse",
       description: "Front end Design",
       imgUrl: projImg3,
       visitLink: 'https://metroverse-design.netlify.app/'
+    }
+  ];
+
+  const certificates = [
+    {
+      title: "Udemy MERN Stack",
+      description: "I've done full stack MERN course.",
+      imgUrl: projImg5,
+      visitLink: 'https://udemy-certificate.s3.amazonaws.com/image/UC-7b02e76b-58a6-4089-a371-30bf90ffa39f.jpg'
     }
   ];
 
@@ -57,10 +64,10 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className=" mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Full Stack Projects</Nav.Link>
+                      <Nav.Link eventKey="first">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Front End Designs</Nav.Link>
+                      <Nav.Link eventKey="third">Certificates</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={once ? "animate__animated animate__slideInUp" : ""}>
@@ -84,7 +91,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="third">
                     <Row className="d-flex justify-content-center">
                         {
-                          front_end_projects.map((project, index) => {
+                          certificates.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
