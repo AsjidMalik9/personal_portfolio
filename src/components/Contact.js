@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import axios from "axios";
 
-export const Contact = () => {
+export const Contact = ({contactFormRef}) => {
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -13,6 +13,7 @@ export const Contact = () => {
     phone: '',
     message: ''
   }
+
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
@@ -40,7 +41,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="connect" ref={contactFormRef}>
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>

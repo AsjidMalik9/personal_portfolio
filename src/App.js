@@ -7,15 +7,25 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import React, { useRef } from 'react';
 
 function App() {
+
+  const contactFormRef = useRef(null);
+
+  const scrollToContactForm = () => {
+    if (contactFormRef.current) {
+      contactFormRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="App">
       <NavBar />
-      <Banner />
+      <Banner scrollToContactForm={scrollToContactForm} />
       <Skills />
       <Projects />
-      <Contact />
+      <Contact contactFormRef={contactFormRef} />
       <Footer />
     </div>
   );
