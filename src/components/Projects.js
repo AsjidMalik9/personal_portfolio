@@ -7,6 +7,7 @@ import projImg3 from "../assets/img/project-img3.1.png";
 import projImg4 from "../assets/img/project-img4.2.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg5 from "../assets/img/certificate.jpeg";
+import projImg6 from "../assets/img/certificate2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -42,10 +43,16 @@ export const Projects = () => {
   const certificates = [
     {
       title: "Udemy MERN Stack",
-      description: "I've done full stack MERN course.",
+      description: "I enrolled in a Full Stack MERN course to enhance my skills and knowledge in the MERN Stack.",
       imgUrl: projImg5,
       visitLink: 'https://udemy-certificate.s3.amazonaws.com/image/UC-7b02e76b-58a6-4089-a371-30bf90ffa39f.jpg'
-    }
+    },
+    {
+      title: "Certificate of Language Ability",
+      description: "Certificate of language ability showcases my communication skills. This certificate is accepted in various countries. ",
+      imgUrl: projImg6,
+      visitLink: 'https://drive.google.com/file/d/1ZclMY3FST4KXBltXBwBzqkav4-mwYOKO/view?usp=sharing'
+    },
   ];
 
   const [animate, setAnimate] = useState(false);
