@@ -8,6 +8,7 @@ import projImg4 from "../assets/img/project-img4.2.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg5 from "../assets/img/certificate.jpeg";
 import projImg6 from "../assets/img/certificate2.png";
+import projImg7 from "../assets/img/project-img5.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -37,6 +38,12 @@ export const Projects = () => {
       description: "Front end Design",
       imgUrl: projImg3,
       visitLink: 'https://metroverse-design.netlify.app/'
+    },
+    {
+      title: "Trakah Calculator",
+      description: "React on Front-end and node for the backend   ",
+      imgUrl: projImg7,
+      visitLink: 'https://trakah-react.vercel.app/budget-calculator'
     }
   ];
 
