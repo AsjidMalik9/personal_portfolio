@@ -67,7 +67,7 @@ export const Banner = ({scrollToContactForm}) => {
                 <h1> <span className="txt-rotate text-warning" dataPeriod="10" data-rotate='[ "Full Stack Developer", "Ruby on Rail Developer", "MERN Developer", "VueJs Developer"  ]'><span className="wrap">{text}</span></span></h1>
                 </div>
                 <div>
-                <p className="text-white">Full Stack Developer with 4+ years of experience. Adept in bringing forth expertise in design, installation, testing and implementing Agile and SDLC approaches. With expertise in Ruby on Rails, Node, React, VueJs, Express, and AWS.</p>
+                <p className="text-white">Full Stack Developer with 5+ years of experience. Adept in bringing forth expertise in design, installation, testing and implementing Agile and SDLC approaches. With expertise in Ruby on Rails, Node, React, VueJs, Express, and AWS.</p>
                   <button onClick={handleClick}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>
               </div>}

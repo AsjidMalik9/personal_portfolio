@@ -100,7 +100,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>As a Full Stack Developer with over 4 years of experience, I have worked on various projects, utilizing my expertise in Ruby on Rails, Node, React, VueJs, Express, and AWS. Throughout my professional journey, I have successfully contributed to the development, testing, and implementation of Agile and SDLC approaches.</p>
+                      <p>As a Full Stack Developer with over 5 years of experience, I have worked on various projects, utilizing my expertise in Ruby on Rails, Node, React, VueJs, Express, and AWS. Throughout my professional journey, I have successfully contributed to the development, testing, and implementation of Agile and SDLC approaches.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                     <Row className="d-flex justify-content-center">
